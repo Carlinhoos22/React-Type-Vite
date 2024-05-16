@@ -1,7 +1,10 @@
 import './App.css'
 import { useState } from 'react'
 import MyNavbar from './components/MyNavbar'
+import MyCard from './components/MyCard'
+import Rodape from './components/Rodape/rodape'
 import { Col, Container, Row } from 'react-bootstrap'
+import MyContent from './components/MyContent'
 
 
 function App() {
@@ -9,18 +12,27 @@ function App() {
     <>
 
       <MyNavbar/> 
-      {/*CONTROLE DE ROTAS*/}
+      <br />
+
+      <MyContent/>
+      <br />
+
       <Container>
         <Row>
-          <Col md={4}>Coluna1</Col>
-
-          <Col md={4}>Coluna2</Col>
-
-          <Col md={4}>Coluna3</Col>
+          <Col md={4}>
+            <MyCard/>
+          </Col>
+          <Col md={4}>
+            <MyCard/>
+          </Col>
+          <Col md={4}>
+            <MyCard/>
+          </Col>
         </Row>
       </Container>
+      <br />
 
-
+      <Rodape/>
     </>
   )
 }
