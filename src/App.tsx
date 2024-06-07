@@ -10,13 +10,10 @@ import MyContent from './components/MyContent'
 function App() {
   return (
     <>
-
-      <MyNavbar/> 
+      <MyNavbar/>
       <br />
-
-      <MyContent/>
+      <MyCard/>
       <br />
-
       <Container>
         <Row>
           <Col md={4}>
@@ -30,9 +27,6 @@ function App() {
           </Col>
         </Row>
       </Container>
-      <br />
-
-      <Rodape/>
     </>
   )
 }
